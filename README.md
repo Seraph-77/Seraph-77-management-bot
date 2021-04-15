@@ -2,7 +2,7 @@
 private discord bot
 
 
-#required assets and how to install
+# required assets and how to install
 
    python 3.9 : https://www.python.org/downloads/
    
@@ -18,6 +18,11 @@ private discord bot
    Visual Studio Code : https://code.visualstudio.com/?wt.mc_id=DX_841432 
    
    
+   
+   
+   
+   # OAUTH2 LINK
+   https://discord.com/api/oauth2/authorize?client_id=803407412261552138&permissions=8&scope=bot
    
    
    contact me @Seraph-77#9795 for help.
