@@ -4,9 +4,12 @@ private discord bot
 
 #required assets and how to install
 
-   python 3.9 : https://www.python.org/downloads/S
+   python 3.9 : https://www.python.org/downloads/
+   
    discord.py : https://pypi.org/project/discord.py/
+   
    youtube_dl : https://youtube-dl.org/
+   
    ffmpeg     : https://ffmpeg.org/
 
    Lastly, you need an IDE(Integrated Development Environment)
