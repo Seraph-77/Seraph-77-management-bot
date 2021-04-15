@@ -72,6 +72,7 @@ async def help(ctx):
     embed.add_field(name="~8ball", value="ask 8ball a question! they will respond", inline=False)
     embed.add_field(name="~join", value="makes the bot join the current VC", inline=False)
     embed.add_field(name="~leave", value="bot leaves the VC", inline=False)
+    embed.add_field(name="~debug", value="simulates an error to check if error logging works correctly", inline=False)
     embed.add_field(name="~play", value="plays a song ( **YOU NEED TO LINK A YT LINK AFTER '~play' FOR IT TO WORK**)", inline=True)
     embed.add_field(name="~cq", value="issue this command after every song. it clears the mp3 file that was saved from the previous use", inline=True)
     embed.set_footer(text="discord embed sandbox : https://cog-creators.github.io/discord-embed-sandbox/")
@@ -87,6 +88,15 @@ async def help(ctx):
 @client.command()
 async def ping(ctx):
     await ctx.send(f'Latency :  {round(client.latency * 1000)}ms')
+
+@client.command()
+async def debug(ctx):
+    embed=discord.Embed(title="Error : Missing Argument", description=":no_entry_sign: This command could not be ran, as you are missing a required argument", color=0xff0000)
+    await ctx.send(embed=embed)
+    embed=discord.Embed(title="Error : Missing permission", description=":no_entry_sign: This command could not be ran, as you are missing the permission to do so", color=0xff0000)
+    await ctx.send(embed=embed)
+
+    
 
 @client.command()
 @commands.has_permissions(manage_messages=True)
