@@ -4,7 +4,7 @@ import discord
 from discord.utils import get
 from discord.ext import commands
 from discord.utils import find
-#built in to python requirements------
+#built-in to python requirements------
 import random
 import os
 import youtube_dl
@@ -118,7 +118,7 @@ async def unmute(ctx, member: discord.Member, reason: str = None):
     muted = discord.utils.get(ctx.guild.roles, name="Muted")
     await member.remove_roles(muted)
     channel = client.get_channel(832224954930036746)
-    await channel.send(f' :no_entry_sign: un-muted {member}')
+    await channel.send(f' :white_check_mark: un-muted {member}'))
 
 
 @client.command()
