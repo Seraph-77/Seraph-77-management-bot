@@ -25,4 +25,4 @@ private discord bot
    https://discord.com/api/oauth2/authorize?client_id=803407412261552138&permissions=8&scope=bot
    
    
-   contact me @Seraph-77#9795 for help.
+   contact me @Seraph#9795 for help.
